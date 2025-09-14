@@ -1,4 +1,4 @@
 baseURL = 'https://showiproute.com/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = 'ShowIPRoute Blog'
 theme = 'hugo-clarity'
