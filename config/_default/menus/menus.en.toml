@@ -35,18 +35,18 @@
   weight = 1
   url = "https://github.com/#"
 [[social]]
-  name = "X"
-  weight = 2
-  url = "https://x.com/#"
-[[social]]
   name = "linkedin"
   weight = 3
-  url = "https://www.linkedin.com/in/#"
-[[social]]
-  name = "rss"
-  weight = 4
-  url = "index.xml"
+  url = "https://www.linkedin.com/in/bassomrc/"
 
+#[[social]]
+#  name = "X"
+#  weight = 2
+#  url = "https://x.com/#"
+#[[social]]
+#  name = "rss"
+#  weight = 4
+#  url = "index.xml"
 # other supported social links
 # name = "youtube"
 # url = "https://www.youtube.com/#"
