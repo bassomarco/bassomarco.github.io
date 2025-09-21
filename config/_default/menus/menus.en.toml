@@ -1,19 +1,20 @@
 # social menu links
 
-[[social]]
-  name = "github"
-  type = "social"
-  weight = 1
-  url = "https://github.com/#"
+
 [[social]]
   name = "X"
-  weight = 2
-  url = "https://x.com/#"
+  weight = 1
+  url = "https://x.com/maybenotmarco?s=21&t=Q4pv3JG7EypIdgLOWnR9kQ"
 [[social]]
   name = "linkedin"
-  weight = 3
-  url = "https://www.linkedin.com/in/#"
+  weight = 2
+  url = "https://www.linkedin.com/in/bassomrc/"
 
+#[[social]]
+#  name = "github"
+#  type = "social"
+#  weight = 1
+#  url = "https://github.com/#"
 #[[social]]
 #  name = "rss"
 #  weight = 4
