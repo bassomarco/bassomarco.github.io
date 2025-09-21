@@ -1,7 +1,7 @@
-[[main]]
-  name = "Home"
-  url = ""
-  weight = -110
+#[[main]]
+#  name = "Home"
+#  url = ""
+#  weight = -110
 
 #[[main]]
 #  name = "Archives"
@@ -22,10 +22,10 @@
 #  name = "X"
 #  url = "https://x.com/"
 
-[[main]]
-  name = "About"
-  url = "about/"
-  weight = -107
+#[[main]]
+#  name = "About"
+#  url = "about/"
+#  weight = -107
 
 # social menu links
 
