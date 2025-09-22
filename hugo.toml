@@ -1,4 +1,4 @@
 baseURL = 'https://showiproute.com/'
 languageCode = 'en-us'
-title = 'ShowIPRoute Blog'
+title = 'ShowIPRoute Blog 1'
 theme = 'hugo-clarity'
