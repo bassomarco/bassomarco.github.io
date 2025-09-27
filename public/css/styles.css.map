@@ -1,7 +1,7 @@
 {
 	"version": 3,
 	"file": "styles.css",
-	"sourceRoot": "C:/Users/marbasso/OneDrive - Cisco/Desktop/showiproute",
+	"sourceRoot": "C:/Users/Pompl/Documents/projects/bassomarco",
 	"sources": [
 		"themes/hugo-clarity/assets/sass/main.sass",
 		"themes/hugo-clarity/assets/sass/_variables.sass",
