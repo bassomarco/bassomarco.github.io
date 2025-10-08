@@ -1,8 +1,13 @@
-+++ 
-menus = 'main' 
+
+---
+title: "About"
+menu: "main"
 title = 'About' 
-draft = false
-+++
+type: "page"
+draft: false
+weight: 1
+description: "Learn more about Marco, a network engineer passionate about routing, ISE, and SD-WAN."
+---
 
 
 👋 Hey everyone!
