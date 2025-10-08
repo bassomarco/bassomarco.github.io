@@ -1,7 +1,7 @@
 +++ 
 menus = 'main' 
 title = 'About' 
-draft = 'false'
+draft = false
 +++
 
 
