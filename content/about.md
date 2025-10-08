@@ -4,7 +4,6 @@ title: "About"
 menu: "main" 
 type: "page"
 draft: false
-weight: 1
 description: "Learn more about Marco, a network engineer passionate about routing, ISE, and SD-WAN."
 ---
 
