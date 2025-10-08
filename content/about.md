@@ -1,8 +1,7 @@
 
 ---
 title: "About"
-menu: "main"
-title = 'About' 
+menu: "main" 
 type: "page"
 draft: false
 weight: 1
