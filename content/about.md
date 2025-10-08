@@ -1,11 +1,10 @@
-
----
-title: "About"
-menu: "main" 
-type: "page"
-draft: false
-description: "Learn more about Marco, a network engineer passionate about routing, ISE, and SD-WAN."
----
++++
+title = "About" 
+description = "Hugo, the world's fastest framework for building websites" 
+date = "2019-02-28" 
+aliases = ["about-us", "about-hugo", "contact"] 
+author = "Hugo Authors" 
++++
 
 
 👋 Hey everyone!
