@@ -1,4 +1,5 @@
 [[main]]
+  identifier _ "about"
   name = "About"
   url = "about/"
   weight = 10
