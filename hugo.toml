@@ -1,4 +1,10 @@
 baseURL = 'https://showiproute.com/'
 languageCode = 'en-us'
-#title = 'ShowIPRoute'
+title = 'ShowIPRoute'
 theme = 'hugo-clarity'
+
+[menu]
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
