@@ -1,5 +1,10 @@
-# social menu links
+[menu]
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
 
+# social menu links
 
 [[social]]
   name = "x"
