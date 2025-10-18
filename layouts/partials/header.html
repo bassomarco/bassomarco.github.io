@@ -1,0 +1,59 @@
+{{- $params := .Site.Params }}
+{{- $centerLogo := $params.centerLogo }}
+<header class="nav_header">
+  <nav class="nav">
+    {{- if $centerLogo }}
+      <a href='{{ absLangURL "" }}' class="nav_brand nav_item nav_hide" title="{{ .Site.Title }}">
+        <img src="{{ absURL "images/logo-light.png" }}" alt="{{ .Site.Title }}" class="logo logo-light">
+        <img src="{{ absURL "images/logo-dark.png" }}" alt="{{ .Site.Title }}" class="logo logo-dark">
+        {{ .Site.Title }}
+        <div class="nav_close">
+          <div>
+            {{- partialCached "sprite" (dict "icon" "open-menu") -}}
+            {{- partial "sprite" (dict "icon" "closeme") -}}
+          </div>
+        </div>
+      </a>
+    {{- else }}
+      <a href='{{ absLangURL "" }}' class="nav_brand nav_item" title="{{ .Site.Title }}">
+        <img src="{{ absURL "images/logo-light.png" }}" alt="{{ .Site.Title }}" class="logo logo-light">
+        <img src="{{ absURL "images/logo-dark.png" }}" alt="{{ .Site.Title }}" class="logo logo-dark">
+        {{ .Site.Title }}
+        <div class="nav_close">
+          <div>
+            {{- partialCached "sprite" (dict "icon" "open-menu") -}}
+            {{- partial "sprite" (dict "icon" "closeme") -}}
+          </div>
+        </div>
+      </a>
+    {{- end }}
+    <div class='nav_body nav_body_{{ default "left" $params.mobileNavigation }}'>
+      {{ $context := . }}
+      {{ $menuData := .Site.Data.menu }}
+      {{ with $menuData }}
+        {{ partial "nav" (dict "context" $context "menu" $menuData) }}
+      {{- else }}
+        {{ partial "nav" (dict "context" . "menu" .Site.Menus.main) }}
+      {{- end }}
+      {{ if hugo.IsMultilingual }}
+      <div class="nav_parent">
+        <a href="#" class="nav_item">{{ $params.languageMenuName }}</a>
+        <div class="nav_sub">
+          <span class="nav_child"></span>
+          {{ range .Site.Home.AllTranslations }}
+          <a href="{{ .Permalink }}" class="nav_child nav_item">{{ .Language.LanguageName }}</a>
+          {{ end }}
+        </div>
+      </div>
+      {{- end }}
+      {{- if $centerLogo }}
+        <a href='{{ absLangURL "" }}' class="nav_brand nav_item nav_center" title="{{ .Site.Title }}">
+          <img src="{{ absURL "images/logo-light.png" }}" alt="{{ .Site.Title }}" class="logo logo-light">
+          <img src="{{ absURL "images/logo-dark.png" }}" alt="{{ .Site.Title }}" class="logo logo-dark">
+          {{ .Site.Title }}
+        </a>
+      {{- end }}
+      {{- partialCached "follow" . }}
+    </div>
+  </nav>
+</header>

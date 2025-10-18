@@ -14,12 +14,14 @@
   name = "linkedin"
   weight = 2
   url = "https://www.linkedin.com/in/bassomrc/"
-
-#[[social]]
-#  name = "github"
-#  type = "social"
-#  weight = 1
-#  url = "https://github.com/#"
+[[social]]
+  name = "github"
+  weight = 3
+  url = "https://github.com/bassomarco"
+[[social]]
+  name = "mail"
+  weight = 4
+  url = "mailto:your-email@example.com"
 #[[social]]
 #  name = "rss"
 #  weight = 4

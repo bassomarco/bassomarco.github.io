@@ -2,3 +2,9 @@ baseURL = 'https://showiproute.com/'
 languageCode = 'en-us'
 title = 'ShowIPRoute'
 theme = 'hugo-clarity'
+
+[pagination]
+pagerSize = 10
+
+[params]
+customCSS = ["css/custom.css"]
