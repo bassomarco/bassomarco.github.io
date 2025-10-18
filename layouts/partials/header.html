@@ -4,8 +4,8 @@
   <nav class="nav">
     {{- if $centerLogo }}
       <a href='{{ absLangURL "" }}' class="nav_brand nav_item nav_hide" title="{{ .Site.Title }}">
-        <img src="{{ absURL "images/logo-light.png" }}" alt="{{ .Site.Title }}" class="logo logo-light">
-        <img src="{{ absURL "images/logo-dark.png" }}" alt="{{ .Site.Title }}" class="logo logo-dark">
+        <img src="{{ absURL "images/logo-light.png" }}" alt="{{ .Site.Title }}" class="logo logo-light" width="40" height="40">
+        <img src="{{ absURL "images/logo-dark.png" }}" alt="{{ .Site.Title }}" class="logo logo-dark" width="40" height="40">
         {{ .Site.Title }}
         <div class="nav_close">
           <div>
@@ -16,8 +16,8 @@
       </a>
     {{- else }}
       <a href='{{ absLangURL "" }}' class="nav_brand nav_item" title="{{ .Site.Title }}">
-        <img src="{{ absURL "images/logo-light.png" }}" alt="{{ .Site.Title }}" class="logo logo-light">
-        <img src="{{ absURL "images/logo-dark.png" }}" alt="{{ .Site.Title }}" class="logo logo-dark">
+        <img src="{{ absURL "images/logo-light.png" }}" alt="{{ .Site.Title }}" class="logo logo-light" width="40" height="40">
+        <img src="{{ absURL "images/logo-dark.png" }}" alt="{{ .Site.Title }}" class="logo logo-dark" width="40" height="40">
         {{ .Site.Title }}
         <div class="nav_close">
           <div>
@@ -48,8 +48,8 @@
       {{- end }}
       {{- if $centerLogo }}
         <a href='{{ absLangURL "" }}' class="nav_brand nav_item nav_center" title="{{ .Site.Title }}">
-          <img src="{{ absURL "images/logo-light.png" }}" alt="{{ .Site.Title }}" class="logo logo-light">
-          <img src="{{ absURL "images/logo-dark.png" }}" alt="{{ .Site.Title }}" class="logo logo-dark">
+          <img src="{{ absURL "images/logo-light.png" }}" alt="{{ .Site.Title }}" class="logo logo-light" width="40" height="40">
+          <img src="{{ absURL "images/logo-dark.png" }}" alt="{{ .Site.Title }}" class="logo logo-dark" width="40" height="40">
           {{ .Site.Title }}
         </a>
       {{- end }}
