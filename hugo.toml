@@ -1,4 +1,4 @@
-baseURL = 'https://showiproute.com/'
+baseURL = 'https://showiproute-dev.netlify.app/' # replace with 'https://showiproute.com/'
 languageCode = 'en-us'
 title = 'ShowIPRoute'
 theme = 'hugo-clarity'
