@@ -74,6 +74,17 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  max-width: none !important;
+  margin: 0 !important;
+}
+
+/* Constrain main content and header to max-width */
+.nav,
+main {
+  max-width: 1920px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
 }
 
 main {
@@ -82,6 +93,7 @@ main {
 
 .footer {
   flex-shrink: 0;
+  width: 100%;
 }
 
 /* Prevent layout shift when navigating between pages by always showing scrollbar space */
