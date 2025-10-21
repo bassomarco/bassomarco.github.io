@@ -1,4 +1,6 @@
-+++ 
-menus = 'main' 
-title = 'Send a Ping' 
++++
+menus = 'main'
+title = 'Send a Ping'
+showdate = false
+showreadtime = false
 +++

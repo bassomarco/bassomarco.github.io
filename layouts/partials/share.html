@@ -1,0 +1,10 @@
+  {{- $s := T "share_on" }}
+  <div class="post_share">
+    {{ $s }}:
+    <a href="#linkedinshare" id = "linkedinshare" class="linkedin" title="{{ $s }} LinkedIn" rel="nofollow">
+      {{ partial "sprite" (dict "icon" "linkedin") }}
+    </a>
+    <a href="{{ .Permalink }}" title="Copy Link" class="link link_yank">
+      {{ partial "sprite" (dict "icon" "copy") }}
+    </a>
+  </div>

@@ -33,6 +33,17 @@ html[data-mode="dim"] .footer-logo-light {
   display: block;
 }
 
+/* Also handle system preference for dark mode on initial load */
+@media (prefers-color-scheme: dark) {
+  html:not([data-mode="lit"]) .footer-logo-dark {
+    display: none;
+  }
+
+  html:not([data-mode="lit"]) .footer-logo-light {
+    display: block;
+  }
+}
+
 /* Fix logo shifting by ensuring consistent sizing */
 .nav_brand {
   display: flex;
@@ -56,4 +67,24 @@ html[data-mode="dim"] .footer-logo-light {
 
 .follow a:last-child {
   margin-right: 0;
+}
+
+/* Ensure consistent footer positioning across all pages */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+.footer {
+  flex-shrink: 0;
+}
+
+/* Prevent layout shift when navigating between pages by always showing scrollbar space */
+html {
+  overflow-y: scroll;
 }

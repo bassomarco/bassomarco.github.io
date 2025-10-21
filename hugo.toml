@@ -8,3 +8,4 @@ pagerSize = 10
 
 [params]
 customCSS = ["css/custom.css"]
+enforceLightMode = false
