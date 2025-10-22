@@ -1,0 +1,8 @@
+{{- $s := .Site.Params }} {{- $c := default .Site.Title .Site.Copyright }} {{- if or .Params.enableMathNotation $s.enableMathNotation }} {{ partialCached "math" . }} {{- end }}
+<footer class="footer pale">
+  <div class="footer_inner wrap">
+    <img src="{{ absURL "images/logo-dark.png" }}" class="footer_logo footer-logo-dark" alt="{{ $c }}"> <img src="{{ absURL "images/logo-light.png" }}" class="footer_logo footer-logo-light" alt="{{ $c }}">
+    <p>2025 - Copyright ShowIPRoute</p>
+    {{- partialCached "top" . }}
+  </div>
+</footer>

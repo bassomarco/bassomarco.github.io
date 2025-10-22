@@ -1,0 +1,102 @@
+/* Logo theme switching */
+.logo, .footer_logo {
+  max-height: 40px;
+  width: auto;
+  display: block;
+}
+
+/* Header logo - always show light logo (header bg is always dark) */
+.nav_brand .logo-light {
+  display: block;
+}
+
+.nav_brand .logo-dark {
+  display: none !important;
+}
+
+/* Footer logo - switch based on theme */
+/* Light mode: show dark logo (dark logo on light background) */
+.footer-logo-dark {
+  display: block;
+}
+
+.footer-logo-light {
+  display: none;
+}
+
+/* Dark mode: show light logo (light logo on dark background) */
+html[data-mode="dim"] .footer-logo-dark {
+  display: none;
+}
+
+html[data-mode="dim"] .footer-logo-light {
+  display: block;
+}
+
+/* Also handle system preference for dark mode on initial load */
+@media (prefers-color-scheme: dark) {
+  html:not([data-mode="lit"]) .footer-logo-dark {
+    display: none;
+  }
+
+  html:not([data-mode="lit"]) .footer-logo-light {
+    display: block;
+  }
+}
+
+/* Fix logo shifting by ensuring consistent sizing */
+.nav_brand {
+  display: flex;
+  align-items: center;
+}
+
+.nav_brand .logo {
+  margin-right: 10px;
+}
+
+/* Footer logo styling */
+.footer_logo {
+  max-width: 150px;
+  margin-bottom: 1rem;
+}
+
+/* Social icons spacing - reduced gap */
+.follow a {
+  margin-right: 0.5rem;
+}
+
+.follow a:last-child {
+  margin-right: 0;
+}
+
+/* Ensure consistent footer positioning across all pages */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  max-width: none !important;
+  margin: 0 !important;
+}
+
+/* Constrain main content and header to max-width */
+.nav,
+main {
+  max-width: 1920px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+.footer {
+  flex-shrink: 0;
+  width: 100%;
+}
+
+/* Prevent layout shift when navigating between pages by always showing scrollbar space */
+html {
+  overflow-y: scroll;
+}
