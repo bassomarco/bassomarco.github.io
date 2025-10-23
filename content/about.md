@@ -27,4 +27,5 @@ If you’d like to suggest a topic for a deep dive related to these areas, or ju
 
 Outside of networking, I’m also passionate about traveling, hiking, and cinema!
 
-Welcome, and thanks for being here 🚀
+Welcome
+And thanks for being here 🚀
