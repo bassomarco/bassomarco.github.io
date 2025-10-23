@@ -25,7 +25,6 @@ This blog is where I’ll share my experiences, lessons learned, and insights fr
 
 If you’d like to suggest a topic for a deep dive related to these areas, or just want to ask me something else, feel free to reach out through my social platforms — you can find them in the top-right corner of the website. I’ll do my best to reply as soon as possible 🙂
 
-Outside of networking, I’m also passionate about traveling, hiking, and cinema!
+Outside of networking, I’m also passionate about traveling, hiking, and cinema! 🚀
 
-Welcome
-And thanks for being here 🚀
+Welcome and thanks for being here 🚀
